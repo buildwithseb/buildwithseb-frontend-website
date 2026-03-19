@@ -162,8 +162,8 @@ h2 {
 }
 
 .coming-soon {
-  border: 2px dashed #d1d5db;
-  background: #f9fafb;
+    border: 2px dashed #d1d5db;
+    background: #f9fafb;
 }
 
 ul {
@@ -200,5 +200,55 @@ footer {
 
     .project-tile p {
         min-height: auto;
+    }
+}
+
+/* HEADER LAYOUT */
+.header {
+    background-color: #1f2937;
+    color: white;
+    padding: 40px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* TEXT */
+.header-text {
+    max-width: 70%;
+}
+
+.header-text h1 {
+    margin-bottom: 10px;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    /* makes it circular */
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        max-width: 100%;
+    }
+
+    .profile-pic {
+        margin-top: 20px;
     }
 }
