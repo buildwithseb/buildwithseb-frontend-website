@@ -101,11 +101,19 @@ h2 {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .project-tile:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.featured-project {
+    border: 2px solid #bfdbfe;
+    background: linear-gradient(to bottom, #eff6ff, #f9fafb);
 }
 
 .project-icon {
@@ -120,6 +128,10 @@ h2 {
     justify-content: center;
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+.featured-project .project-icon {
+    background: linear-gradient(135deg, #0f766e, #0d9488);
 }
 
 .project-tile h3 {
@@ -166,10 +178,12 @@ h2 {
     text-decoration: none;
     border-radius: 6px;
     font-size: 0.9rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .project-links a:hover {
     background-color: #1d4ed8;
+    transform: translateY(-1px);
 }
 
 .coming-soon {
